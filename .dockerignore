@@ -1,0 +1,30 @@
+# ── Git ──────────────────────────────────────
+.git
+.gitignore
+.gitattributes
+
+# ── Dev tools ────────────────────────────────
+.vscode
+.idea
+*.swp
+*.swo
+
+# ── Composer dev deps (installed inside Docker) ──
+# Keep vendor/ OUT so Docker reinstalls cleanly
+vendor/
+
+# ── Test & docs ──────────────────────────────
+tests/
+test.php
+README.md
+*.md
+
+# ── OS files ─────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Sensitive local config ───────────────────
+.env
+.env.local
+.env.*.local
