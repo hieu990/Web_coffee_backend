@@ -48,7 +48,8 @@ RUN composer install \
     --no-dev \
     --optimize-autoloader \
     --no-interaction \
-    --prefer-dist
+    --prefer-dist \
+    --ignore-platform-reqs
 
 # ── 10. Set correct Apache permissions ───────────────────────
 RUN chown -R www-data:www-data /var/www/html \
@@ -68,3 +69,4 @@ EXPOSE 80
 
 # ── 14. Apache foreground (default CMD from base image) ─────
 CMD ["apache2-foreground"]
+# Trigger Render deploy
