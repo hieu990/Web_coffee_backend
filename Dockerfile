@@ -69,4 +69,4 @@ EXPOSE 80
 
 # ── 14. Apache foreground (default CMD from base image) ─────
 CMD ["apache2-foreground"]
-# Trigger Render deploy
+# Force cache rebuild for dependency sync v2
