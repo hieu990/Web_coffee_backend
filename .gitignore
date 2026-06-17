@@ -1,0 +1,26 @@
+# Composer dependencies
+vendor/
+
+# Local configuration & environment files
+.env
+.env.local
+.env.*.local
+
+# Logs and databases
+*.log
+*.sqlite
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
